@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Wed May 12 12:18:43 EDT 2021
+#Wed May 12 12:28:26 EDT 2021
 target4.type=ClassTarget
 target8.showInterface=false
 class.TeleportOrb.image=Teleportation_orb-removebg-preview.png
@@ -58,7 +58,7 @@ class.Dragon.image=enemy_type_1-removebg-preview (2).png
 target1.type=ClassTarget
 target7.y=0
 target7.x=0
-class.Frog.image=Prodject sprite.png
+class.Frog.image=Prodject sprite new 1.png
 target7.name=Dragon
 target6.y=0
 target1.typeParameters=
@@ -89,6 +89,7 @@ editor.fx.0.height=739
 readme.height=58
 readme.name=@README
 target2.name=Frog
+simulation.speed=50
 package.numDependencies=0
 target9.type=ClassTarget
 class.ground.superclass=greenfoot.World
