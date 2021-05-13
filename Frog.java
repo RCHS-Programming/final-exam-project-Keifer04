@@ -18,6 +18,7 @@ public class Frog extends Actor
         
         playerMovement();
         enemyCollision();
+        istouchingWall();
     }    
     
     public void playerMovement()
@@ -41,10 +42,8 @@ public class Frog extends Actor
     }
     
     public void enemyCollision()
-    {
-     
-        
-    {
+    { 
+        {
            if (isTouching(demonEye.class))
            {
               removeTouching(Frog.class);
@@ -70,6 +69,13 @@ public class Frog extends Actor
               removeTouching(Frog.class);
               setLocation(100, 100);
            }
+        }
     }
+    
+    public void istouchingWall()
+    {
+     {
+         
+        }  
     }
 }
