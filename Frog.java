@@ -25,19 +25,19 @@ public class Frog extends Actor
     {
          if (Greenfoot.isKeyDown("up"))
         {
-            setLocation( getX(), getY() -3);
+            setLocation( getX(), getY() -6);
         }   
         if (Greenfoot.isKeyDown("down"))
         {
-            setLocation( getX(), getY() +3 );
+            setLocation( getX(), getY() +6 );
         }    
         if (Greenfoot.isKeyDown("right"))
         {
-            setLocation( getX() +3, getY() );
+            setLocation( getX() +6, getY() );
         }    
         if (Greenfoot.isKeyDown("left"))
         {
-            setLocation( getX() -3, getY() );
+            setLocation( getX() -6, getY() );
         }  
     }
     
