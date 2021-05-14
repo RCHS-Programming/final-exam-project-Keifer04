@@ -22,6 +22,6 @@ public class ground extends World
         addObject(new demonEye(),550, 550);
         addObject(new Dragon(),600, 500);
         addObject(new soundwave(),800, 500);
-        addObject(new TeleportOrb(),Greenfoot.getRandomNumber(500)<100 ,(Greenfoot.getRandomNumber(100)<100 ) );
+        
     }
 }

@@ -8,6 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Frog extends Actor
 {
+    
+    private int FrogEat;
+    
     /**
      * Act - do whatever the Frog wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -19,6 +22,7 @@ public class Frog extends Actor
         playerMovement();
         enemyCollision();
         istouchingWall();
+        lookForgoldOrb();
     }    
     
     public void playerMovement()
@@ -78,4 +82,22 @@ public class Frog extends Actor
          
         }  
     }
+    
+         public void lookForgoldOrb()
+    {
+      if(isTouching(goldOrb.class))
+       {
+           removeTouching(goldOrb.class);
+           Greenfoot.playSound("slurp.wav");
+           
+           
+           getWorld().showText("Score: " + FrogEat, 50, 500);
+           
+           
+           if ( FrogEat ==8)
+           {
+               Greenfoot.stop();
+            }
+        } 
+}
 }
