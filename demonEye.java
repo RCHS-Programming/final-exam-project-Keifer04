@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class demonEye extends Actor
 {
+    private int demonmove=2;
     /**
      * Act - do whatever the demonEye wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -19,11 +20,12 @@ public class demonEye extends Actor
         move();
        randomTurn();
        turnAtEdge();
+       istouchingWall();
     }    
     
     public void move( )
     {
-        move(4);
+        move(demonmove);
     }
     
     public void randomTurn()
@@ -42,5 +44,26 @@ public class demonEye extends Actor
             
         }   
         
-    }
+     public void istouchingWall()
+      {
+              {
+      if (isTouching (wall.class))
+       {
+       demonmove=0;  
+        }  
+        else
+        {
+         demonmove=8;
+        }
+      if (isTouching (wall2.class))
+       {
+       demonmove=0;  
+        }  
+        else
+     {
+       demonmove=8;
+     }
+     }
+     }
+        }
 }

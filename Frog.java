@@ -10,7 +10,8 @@ public class Frog extends Actor
 {
     
     private int FrogEat;
-    
+    private int XSpeed=8;
+    private int YSpeed=8;
     /**
      * Act - do whatever the Frog wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -29,19 +30,19 @@ public class Frog extends Actor
     {
          if (Greenfoot.isKeyDown("up"))
         {
-            setLocation( getX(), getY() -6);
+            setLocation( getX(), getY() -YSpeed);
         }   
         if (Greenfoot.isKeyDown("down"))
         {
-            setLocation( getX(), getY() +6 );
+            setLocation( getX(), getY() +YSpeed );
         }    
         if (Greenfoot.isKeyDown("right"))
         {
-            setLocation( getX() +6, getY() );
+            setLocation( getX() +XSpeed, getY() );
         }    
         if (Greenfoot.isKeyDown("left"))
         {
-            setLocation( getX() -6, getY() );
+            setLocation( getX() -XSpeed, getY() );
         }  
     }
     
@@ -79,14 +80,29 @@ public class Frog extends Actor
     public void istouchingWall()
     {
      {
-         
+         if (isTouching (wall.class))
+         {
+           YSpeed=0;  
         }  
+        else
+        {
+            YSpeed=8;
+        }
+        if (isTouching (wall2.class))
+         {
+           XSpeed=0;  
+        }  
+        else
+        {
+            XSpeed=8;
+        }
     }
+}
     
-         public void lookForgoldOrb()
-    {
-      if(isTouching(goldOrb.class))
-       {
+             public void lookForgoldOrb()
+         {
+             if(isTouching(goldOrb.class))
+      {
            removeTouching(goldOrb.class);
            Greenfoot.playSound("slurp.wav");
            
