@@ -40,9 +40,8 @@ public class Dragon extends Actor
             turn (-17);
             
         }   
-        
-       
     }
+    
     
 }
 

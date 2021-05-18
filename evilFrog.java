@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class evilFrog extends Actor
 {
+    
+    private int evilFrog=7;
     /**
      * Act - do whatever the evilFrog wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -18,11 +20,12 @@ public class evilFrog extends Actor
         move();
         randomTurn();
         turnAtEdge();
+        istouchingWall();
     }    
     
     public void move( )
     {
-        move(4);
+        move(evilFrog);
     }
     
     public void randomTurn()
@@ -39,7 +42,26 @@ public class evilFrog extends Actor
         {
             turn (17);
             
-        }   
-        
+        }    
     }
+    
+    public void istouchingWall()
+     {
+         if (isTouching (wall.class))
+         {
+           evilFrog=0;  
+          }  
+          else
+           {
+              evilFrog=7;
+           }
+          if (isTouching (wall2.class))
+          {
+             evilFrog=0;  
+           }  
+            else
+         {
+             evilFrog=7;
+         }
+     }
 }

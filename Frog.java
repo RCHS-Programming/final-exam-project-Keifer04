@@ -52,27 +52,27 @@ public class Frog extends Actor
            if (isTouching(demonEye.class))
            {
               removeTouching(Frog.class);
-              setLocation( 100, 100);
+              setLocation( 500, 100);
             }
            if (isTouching(Dragon.class))
            {
               removeTouching(Frog.class);
-              setLocation(100, 100);
+              setLocation(500, 100);
            }
            if (isTouching(evilFrog.class))
            {
               removeTouching(Frog.class);
-              setLocation(100, 100);
+              setLocation(500, 100);
            }
            if (isTouching(soundwave.class))
            {
               removeTouching(Frog.class);
-              setLocation(100, 100);
+              setLocation(500, 100);
            }
            if (isTouching(deathOrb.class))
            {
               removeTouching(Frog.class);
-              setLocation(100, 100);
+              setLocation(500, 100);
            }
         }
     }
@@ -104,7 +104,6 @@ public class Frog extends Actor
              if(isTouching(goldOrb.class))
       {
            removeTouching(goldOrb.class);
-           Greenfoot.playSound("slurp.wav");
            
            
            getWorld().showText("Score: " + FrogEat, 50, 500);

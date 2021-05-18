@@ -42,28 +42,28 @@ public class demonEye extends Actor
         {
             turn (-17);
             
-        }   
+        } 
+    }
         
-     public void istouchingWall()
-      {
-              {
-      if (isTouching (wall.class))
-       {
-       demonmove=0;  
-        }  
-        else
-        {
-         demonmove=8;
-        }
-      if (isTouching (wall2.class))
-       {
-       demonmove=0;  
-        }  
-        else
+      public void istouchingWall()
      {
-       demonmove=8;
+         if (isTouching (wall.class))
+         {
+           demonmove=0;  
+          }  
+          else
+           {
+              demonmove=2;
+           }
+          if (isTouching (wall2.class))
+          {
+             demonmove=0;  
+           }  
+            else
+         {
+             demonmove=2;
+         }
      }
      }
-     }
-        }
-}
+        
+

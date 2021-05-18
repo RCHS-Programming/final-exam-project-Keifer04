@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class soundwave extends Actor
 {
+    private int soundwaveSpeed=4;
     /**
      * Act - do whatever the soundwave wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -18,11 +19,12 @@ public class soundwave extends Actor
        move();
        randomTurn();
        turnAtEdge();
+       istouchingWall();
     }    
     
      public void move( )
     {
-        move(4);
+        move(soundwaveSpeed);
     }
     
     public void randomTurn()
@@ -39,7 +41,26 @@ public class soundwave extends Actor
         {
             turn (-17);
             
-        }   
-        
-    }  
+        }    
+    } 
+    
+     public void istouchingWall()
+     {
+         if (isTouching (wall.class))
+         {
+           soundwaveSpeed=0;  
+          }  
+          else
+           {
+              soundwaveSpeed=4;
+           }
+          if (isTouching (wall2.class))
+          {
+             soundwaveSpeed=0;  
+           }  
+            else
+         {
+             soundwaveSpeed=4;
+         }
+     }
 }
