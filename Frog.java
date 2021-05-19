@@ -74,6 +74,10 @@ public class Frog extends Actor
               removeTouching(Frog.class);
               setLocation(500, 100);
            }
+           if (isTouching(TeleportOrb.class))
+           {
+               setLocation(Greenfoot.getRandomNumber (800), Greenfoot.getRandomNumber (500));
+            }
         }
     }
     
@@ -106,10 +110,10 @@ public class Frog extends Actor
            removeTouching(goldOrb.class);
            
            
-           getWorld().showText("Score: " + FrogEat, 50, 500);
+           getWorld().showText("You Win: " + FrogEat, 50, 500);
            
            
-           if ( FrogEat ==8)
+           if ( FrogEat ==2)
            {
                Greenfoot.stop();
             }

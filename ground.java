@@ -18,10 +18,28 @@ public class ground extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 600, 1);
         addObject(new Frog(),500, 100);
-        addObject(new evilFrog(),500, 500);
-        addObject(new demonEye(),550, 550);
-        addObject(new Dragon(),600, 500);
-        addObject(new soundwave(),800, 500);
-        addObject(new goldOrb(),400, 500);
+        addObject(new evilFrog(),Greenfoot.getRandomNumber(800), 500);
+        addObject(new demonEye(),Greenfoot.getRandomNumber(800), 550);
+        addObject(new Dragon(),Greenfoot.getRandomNumber(800), 500);
+        addObject(new soundwave(),Greenfoot.getRandomNumber(800), 500);
+        addObject(new goldOrb(),Greenfoot.getRandomNumber(800), 500);
+        addObject(new wall2(), Greenfoot.getRandomNumber(400), Greenfoot.getRandomNumber(500));
+        addObject(new wall2(), Greenfoot.getRandomNumber(400), Greenfoot.getRandomNumber(500));
+        addObject(new wall2(), Greenfoot.getRandomNumber(400), Greenfoot.getRandomNumber(500));
+        addObject(new wall(), Greenfoot.getRandomNumber(400), Greenfoot.getRandomNumber(500));
+        addObject(new wall(), Greenfoot.getRandomNumber(400), Greenfoot.getRandomNumber(500));
+        addObject(new wall(), Greenfoot.getRandomNumber(400), Greenfoot.getRandomNumber(500));
+        addObject(new wall(), Greenfoot.getRandomNumber(400), Greenfoot.getRandomNumber(500));
+        addObject(new deathOrb(), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(500));
+        addObject(new TeleportOrb(), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(500));
+        addObject(new goldOrb(),Greenfoot.getRandomNumber(800),Greenfoot.getRandomNumber (500));
+        addObject(new goldOrb(),Greenfoot.getRandomNumber(800),Greenfoot.getRandomNumber (500));
+        addObject(new goldOrb(),Greenfoot.getRandomNumber(800),Greenfoot.getRandomNumber (500));
+        addObject(new goldOrb(),Greenfoot.getRandomNumber(800),Greenfoot.getRandomNumber (500));
+        addObject(new goldOrb(),Greenfoot.getRandomNumber(800),Greenfoot.getRandomNumber(500));
+        
+        
+        
+        
     }
 }
