@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Frog extends Actor
 {
     
-    private int FrogEat;
+    private int FrogEat=0;
     private int XSpeed=8;
     private int YSpeed=8;
     /**
@@ -51,8 +51,8 @@ public class Frog extends Actor
         {
            if (isTouching(demonEye.class))
            {
-              removeTouching(Frog.class);
-              setLocation( 500, 100);
+              setLocation(Greenfoot.getRandomNumber (800), Greenfoot.getRandomNumber (500));
+              
             }
            if (isTouching(Dragon.class))
            {
@@ -109,13 +109,14 @@ public class Frog extends Actor
       {
            removeTouching(goldOrb.class);
            
+           FrogEat=FrogEat+1;
+           getWorld().showText("score: " + FrogEat, 50, 500);
            
-           getWorld().showText("You Win: " + FrogEat, 50, 500);
            
-           
-           if ( FrogEat ==2)
+           if ( FrogEat ==4)
            {
                Greenfoot.stop();
+               getWorld().showText("You Win", 500,450); 
             }
         } 
 }

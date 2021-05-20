@@ -20,6 +20,16 @@ public class soundwave extends Actor
        randomTurn();
        turnAtEdge();
        istouchingWall();
+       if (isTouching(TeleportOrb.class))
+           {
+               setLocation(Greenfoot.getRandomNumber (800), Greenfoot.getRandomNumber (500));
+            } 
+          
+       if (isTouching(demonEye.class))
+           {
+              setLocation(Greenfoot.getRandomNumber (800), Greenfoot.getRandomNumber (500));
+              
+            }
     }    
     
      public void move( )

@@ -14,7 +14,11 @@ public class TeleportOrb extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        if (isTouching(demonEye.class))
+           {
+              setLocation(Greenfoot.getRandomNumber (800), Greenfoot.getRandomNumber (500));
+              
+            }
     }    
     
     

@@ -32,11 +32,10 @@ public class ground extends World
         addObject(new wall(), Greenfoot.getRandomNumber(400), Greenfoot.getRandomNumber(500));
         addObject(new deathOrb(), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(500));
         addObject(new TeleportOrb(), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(500));
-        addObject(new goldOrb(),Greenfoot.getRandomNumber(800),Greenfoot.getRandomNumber (500));
-        addObject(new goldOrb(),Greenfoot.getRandomNumber(800),Greenfoot.getRandomNumber (500));
-        addObject(new goldOrb(),Greenfoot.getRandomNumber(800),Greenfoot.getRandomNumber (500));
-        addObject(new goldOrb(),Greenfoot.getRandomNumber(800),Greenfoot.getRandomNumber (500));
-        addObject(new goldOrb(),Greenfoot.getRandomNumber(800),Greenfoot.getRandomNumber(500));
+        addObject(new goldOrb(),Greenfoot.getRandomNumber(800),Greenfoot.getRandomNumber (600));
+        addObject(new goldOrb(),Greenfoot.getRandomNumber(800),Greenfoot.getRandomNumber (600));
+        addObject(new goldOrb(),Greenfoot.getRandomNumber(800),Greenfoot.getRandomNumber (600));
+        
         
         
         
