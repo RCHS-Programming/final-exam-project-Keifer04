@@ -13,7 +13,12 @@ public class deathOrb extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
-    {
+    {     
         // Add your action code here.
+        if (isTouching(demonEye.class))
+           {
+              setLocation(Greenfoot.getRandomNumber (800), Greenfoot.getRandomNumber (500));
+              
+            }
     }    
 }

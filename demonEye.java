@@ -21,14 +21,8 @@ public class demonEye extends Actor
        randomTurn();
        turnAtEdge();
        istouchingWall();
-       if (isTouching(TeleportOrb.class))
-           {
-               setLocation(Greenfoot.getRandomNumber (800), Greenfoot.getRandomNumber (500));
-            } 
-       if (isTouching(deathOrb.class))
-           {
-              getWorld().removeObject(this);
-            }
+       
+      
         
     }    
     
